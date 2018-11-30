@@ -10,7 +10,7 @@ public class ej04 {
 
 		/*
 		 * 1. Pedir un número por teclado
-		 * 2. Controlar si es un número entero con excepciones 
+		 * 2. Controlar si es un número entero
 		 * 3. Se crea una función que devolverá la descomposición en factores primos del número introducido
 		 * 4. Llamada de la función
 		 */
@@ -33,7 +33,7 @@ public class ej04 {
 				} else {
 				 exit = false; 
 				}
-				// 2. Controlar si es un número entero con excepciones
+				// 2. Controlar si es un número entero 
 				 } catch (NumberFormatException | InputMismatchException e) {
 					System.out.println("Número inválido, inténtalo de nuevo"); 
 					exit = true;

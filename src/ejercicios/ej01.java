@@ -10,8 +10,8 @@ public class ej01 {
 		/*
 		 * EJERCICIO 1
 		 * 1. Pedir por teclado 2 números de tipo entero y un carácter
-		 * 2. Controlar que el usuario introduzca solamente +, -, * o /, si no se pedirán los datos de nuevo
-		 * 3. Controlamos la excepcion de que se introduzcan obligatoriamente 2 números enteros
+		 * 2. Comprobamos que el usuario introduzca solamente +, -, * o /, si no se pedirán los datos de nuevo
+		 * 3. Controlamos que se introduzcan obligatoriamente 2 números enteros
 		 * 4. Creamos una función para realizar la operación deseada cuyos parámetros son los datos introducidos por teclado
 		 * 5. Llamamos a la función
 		 * 
@@ -34,7 +34,7 @@ public class ej01 {
 				num2 = keyboard.nextInt();
 				System.out.println("Introduce un carácter (+, -, *, /): ");
 				op = keyboard.next();
-				//2. Controlar que el usuario introduzca solamente +, -, * o /, si no se pedirán los datos de nuevo
+				//2. Comprobamos que el usuario introduzca solamente +, -, * o /, si no se pedirán los datos de nuevo
 				if (!op.equals(SUM) && !op.equals(RES) && !op.equals(MULT) && !op.equals(DIV)) {
 					System.out.println("El carácter introducido es inválido, inténtalo de nuevo");
 					characBool = true;
@@ -46,7 +46,7 @@ public class ej01 {
 					System.out.println("(FUNCIÓN SOBRECARGADA)" + num1 + " " + op + " " + num2 + " = " + operation(num1, num2, op));
 					exit = false;
 				}
-			//3. Controlamos la excepcion de que se introduzcan obligatoriamente 2 números enteros
+			//3. Controlamos que se introduzcan obligatoriamente 2 números enteros
 			} catch (NumberFormatException | InputMismatchException e) {
 				System.out.println("Algún número se ha introducido mal, inténtalo de nuevo");
 				exit = true;

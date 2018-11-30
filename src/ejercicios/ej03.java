@@ -11,7 +11,7 @@ public class ej03 {
 		/*
 		 * 3a 
 		 * 1. Introducir un número entero 
-		 * 2. Controlar mediante excepciones que de verdad es un número entero 
+		 * 2. Controlar que de verdad es un número entero 
 		 * 3. Se crea una función que calculará si dicho número es primo o no 
 		 * 4. Llamar a la función la cual mostrará el resultado de si es primo o no
 		 * 
@@ -26,11 +26,13 @@ public class ej03 {
 		
 		 do { 
 			 try {
+				 //1. Introducir un número entero 
 				 System.out.println("Introduce un número entero: "); 
 				 num = keyboard.nextInt(); 
+				 //4. Llamar a la función la cual mostrará el resultado de si es primo o no
 				 System.out.println(esPrimo(num) ? "es primo":"no es primo"); 
 				 exit = false; 
-				 
+				 //2. Controlar que de verdad es un número entero 
 				 } catch (NumberFormatException | InputMismatchException e) {
 					System.out.println("Número inválido, inténtalo de nuevo"); 
 					exit = true;
@@ -39,13 +41,14 @@ public class ej03 {
 			 keyboard.close();
 		 } while (exit);
 		 
+		//6. Crear una función que muestre todos los números primos entre 1 y 10000
 		System.out.println("Números primos del 1 al 10000");
 		//7. Llamada a la función que mostrará todos los números entre 1 y 10000
 		primos();
 
 		
 	}
-
+	//3. Se crea una función que calculará si dicho número es primo o no 
 	public static boolean esPrimo(int num) {
 		for (int i = 2; i < num; i++) {
 			if (num % i == 0)

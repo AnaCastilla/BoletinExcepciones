@@ -11,7 +11,7 @@ public class ej02 {
 		 * EJERCICIO 1
 		 * 1. Pedir por teclado 2 números de tipo entero y un carácter
 		 * 2. Controlar que el usuario introduzca solamente +, -, * o /, si no se pedirán los datos de nuevo
-		 * 3. Controlamos la excepcion de que se introduzcan obligatoriamente 2 números enteros
+		 * 3. Controlamos que se introduzcan obligatoriamente 2 números enteros
 		 * 4. Creamos una función para realizar la operación deseada cuyos parámetros son los datos introducidos por teclado
 		 * 5. Llamamos a la función
 		 * 
@@ -48,7 +48,7 @@ public class ej02 {
 							+ operation(num1, num2, op));
 					exit = false;
 				}
-				// 3. Controlamos la excepcion de que se introduzcan obligatoriamente 2 números
+				// 3. Controlamos que se introduzcan obligatoriamente 2 números
 				// enteros
 			} catch (NumberFormatException | InputMismatchException | ArithmeticException e) {
 				System.out.println("Algún número se ha introducido mal, inténtalo de nuevo");

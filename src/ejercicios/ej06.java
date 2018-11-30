@@ -9,7 +9,7 @@ public class ej06 {
 
 		/*
 		 * 1. Introducir 2 números enteros
-		 * 2. Controlar mediante excepciones que sean enteros
+		 * 2. Controlar que sean enteros
 		 * 3. Se crea la función 'mcd' que calculará el máximo común divisor de esos 2 números
 		 * 	 **el mcd es el entero más grande que es divisor exacto de los 2 números**
 		 * 4. Llamada a la función
@@ -32,9 +32,11 @@ public class ej06 {
 					 System.out.println("Error, n1 tiene que ser menor que n2");
 					 exit = true;
 				} else {
+					//4. Llamada a la función
 					mcd(num1, num2);
 					exit = false; 
 				}
+				//2. Controlar que sean enteros
 			} catch (NumberFormatException | InputMismatchException e) {
 				System.out.println("Algún número se ha introducido mal, inténtalo de nuevo");
 				exit = true;
@@ -45,6 +47,10 @@ public class ej06 {
 		keyboard.close();
 	}
 	
+	/*
+	 * 3. Se crea la función 'mcd' que calculará el máximo común divisor de esos 2 números
+	 *  **el mcd es el entero más grande que es divisor exacto de los 2 números**
+	 */
 	public static void mcd(int num1, int num2) {
 		
 		int max1 = 0, max2 = 0, n1 = num1, n2 = num2;

@@ -9,7 +9,7 @@ public class ej05 {
 
 		/*
 		 * 1. Pedir un número
-		 * 2. Controlar mediante excepciones si dicho número es entero
+		 * 2. Controlar si dicho número es entero
 		 * 3. Crear la función 'perfecto' que determinará si el número introducido es perfecto o no
 		 * 		** un número es perfecto cuando la suma de sus divisores (incluyendo el 1 y a sí mismo) da como 
 		 * 		   resultado el mismo número**
@@ -38,7 +38,7 @@ public class ej05 {
 				} else {
 				 exit = false; 
 				}
-				// 2. Controlar mediante excepciones si dicho número  es entero
+				// 2. Controlar si dicho número  es entero
 				 } catch (NumberFormatException | InputMismatchException e) {
 					System.out.println("Número inválido, inténtalo de nuevo"); 
 					exit = true;
