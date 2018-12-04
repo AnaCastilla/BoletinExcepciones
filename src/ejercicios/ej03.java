@@ -38,7 +38,7 @@ public class ej03 {
 					exit = true;
 					keyboard.nextLine();
 				}
-			 keyboard.close();
+			
 		 } while (exit);
 		 
 		//6. Crear una función que muestre todos los números primos entre 1 y 10000
@@ -46,6 +46,7 @@ public class ej03 {
 		//7. Llamada a la función que mostrará todos los números entre 1 y 10000
 		primos();
 
+		keyboard.close();
 		
 	}
 	//3. Se crea una función que calculará si dicho número es primo o no 
